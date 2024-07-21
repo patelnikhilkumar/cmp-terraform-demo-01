@@ -34,12 +34,12 @@ variable "resourceGroup" {
 
 variable "vnetName" {
   type    = string
-  default = "<%= customOptions.azreurgprep_vnet>"
+  default = "<%=customOptions.azreurgprep_vnet>"
 }
 
 variable "subetName" {
   type    = string
-  default = "<%= customOptions.azreurgprep_subetname>"
+  default = "<%=customOptions.azreurgprep_subetname>"
 }
 
 variable "nicName" {
