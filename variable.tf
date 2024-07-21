@@ -1,25 +1,25 @@
 variable "subscription_id" {
   type      = string
   sensitive = true
-  default   = "<%= customOptions.azurergprep_subscriptionid %>"
+  default   = "<%=customOptions.azurergprep_subscriptionid %>"
 }
 
 variable "tenant_id" {
   type      = string
   sensitive = true
-  default   = "<%= customOptions.azurergprep_tenantid %>"
+  default   = "<%=customOptions.azurergprep_tenantid %>"
 }
 
 variable "client_id" {
   type      = string
   sensitive = true
-  default   = "<%= customOptions.azurergprep_clientid %>"
+  # default   = "<%= customOptions.azurergprep_clientid %>"
 }
 
 variable "client_secret" {
   type      = string
   sensitive = true
-  default   = "<%= customOptions.azurergprep_clientsecret %>"
+  # default   = "<%= customOptions.azurergprep_clientsecret %>"
 }
 
 variable "region" {
@@ -29,7 +29,7 @@ variable "region" {
 variable "resourceGroup" {
   type      = string
   sensitive = false
-  default   = "<%= customOptions.azurergprep_rg>"
+  default   = "<%=customOptions.azurergprep_rg>"
 }
 
 variable "vnetName" {
@@ -44,17 +44,17 @@ variable "subetName" {
 
 variable "nicName" {
   type    = string
-  default = "<%= customOptions.azreurgprep_vnic>"
+  default = "<%=customOptions.azreurgprep_vnic>"
 }
 
 variable "vmSize" {
   type    = string
-  default = "<%= customOptions.azurergprep_vmsize>"
+  default = "<%=customOptions.azurergprep_vmsize>"
 }
 
 variable "server" {
   type    = string
-  default = "<%= customOptions.azurergprep_server>"
+  default = "<%=customOptions.azurergprep_server>"
 }
 
 variable "defaultTags" {
